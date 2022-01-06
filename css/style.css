@@ -10,11 +10,28 @@ html {
 }
 
 section {
-    padding: 0px 5%;
+    padding: 0px 5% 100px;
+    display: flex;
 }
 
 h1 {
     font-family: 'Yeseva One', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+uo,
+ol {
+    list-style: none;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: uppercase;
 }
 
 .title span {
@@ -28,13 +45,11 @@ h1 {
     line-height: 28px;
     text-transform: capitalize;
 }
-a{
-    text-decoration:none;
-}
+
 .button {
     display: inline-block;
     font-size: 18px;
-    background: rgb(89,35,185);
+    background: rgb(89, 35, 185);
     color: white;
     border-radius: 5px;
     font-weight: 400;
@@ -45,7 +60,6 @@ a{
 
 /* WELCOME SECTION START FROM HERE */
 #welcome-section {
-    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -56,7 +70,7 @@ a{
 }
 
 #welcome-section .welcome-text h1 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 60px;
     line-height: 80px;
     color: #333333;
@@ -71,3 +85,49 @@ a{
 }
 
 /* WELCOME SECTION END HERE */
+/* MY MISSION SECTION START FROM HERE  */
+#my-mission {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#my-mission .card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+#my-mission .card-container .card {
+    width: 360px;
+    height: 376px;
+    padding: 10px 15px;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 8px;
+}
+
+#my-mission .card-container .card img {
+    width: 141px;
+    height: 141px;
+}
+
+#my-mission .card-container .card .card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 10px 0px;
+}
+#my-mission .card-container .card:nth-child(1) {
+    background: rgba(79, 157, 166, 0.1);
+}
+#my-mission .card-container .card:nth-child(2) {
+    background: rgba(255, 89, 89, 0.1);
+}
+#my-mission .card-container .card:nth-child(3) {
+    background: #FFF4D6;
+}
+/* MY MISSION SECTION END HERE */
