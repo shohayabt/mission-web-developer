@@ -27,21 +27,26 @@ ol {
     list-style: none;
 }
 
-.article-headline {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 54px;
-}
-
 .title {
     font-weight: 700;
     font-size: 48px;
     line-height: 70px;
     text-transform: uppercase;
 }
-
 .title span {
     color: #FFAD5A;
+}
+
+
+.footer-title span {
+    color: #FFAD5A;
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .paragraph {
@@ -74,12 +79,22 @@ ol {
 #welcome-section .welcome-image {
     width: 50%;
 }
-
 #welcome-section .welcome-text h1 {
     font-weight: 700;
     font-size: 60px;
     line-height: 80px;
     color: #333333;
+    position: relative;
+}
+#welcome-section .welcome-text h1::after{
+    position: absolute;
+    content: '';
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 88%;
+    background: rgb(89, 35, 185);
 }
 
 #welcome-section .welcome-text h1 span {
@@ -142,27 +157,96 @@ ol {
 
 /* MY MISSION SECTION END HERE */
 /* DEVELOPMENT & COMMUNITY  SECTION COMMON CSS START HERE  */
-#development{
+#development {
     justify-content: space-between;
     align-items: center;
 }
-#community{
+
+#community {
     flex-direction: row-reverse;
 }
-.image,.article{
+
+.image,
+.article {
     width: 50%;
     display: flex;
 }
-.article{
-   justify-content: center;
-   align-items: flex-start;
-   flex-direction: column;
+
+.article {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
-.image{
+
+.article-headline {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: capitalize;
+}
+
+.image {
     justify-content: center;
     align-items: center;
 }
-.image img{
+
+.image img {
     width: 60%;
 }
+
 /* DEVELOPMENT & COMMUNITY  SECTION COMMON CSS END HERE */
+/* MESSAGE SECTION START FROM HERE */
+#message {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#message .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+}
+
+#message .container .message-form {
+    width: 50%;
+}
+
+#message .container .message-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+#message .container .message-form form input,
+#message .container .message-form form textarea {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px;
+}
+
+#message .container .message-form form textarea {
+    font-family: Poppins;
+}
+
+/* MESSAGE SECTION END HERE */
+/* FOOTER SECTION START FROM HERE */
+#footer{
+    width: 100%;
+    background: black;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer .paragraph{
+    color: white;
+    font-size: 16px;
+}
+/* FOOTER SECTION END HERE */
