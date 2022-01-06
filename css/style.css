@@ -95,6 +95,7 @@ ol {
     width: 5px;
     height: 88%;
     background: rgb(89, 35, 185);
+    border-radius: 50px;
 }
 
 #welcome-section .welcome-text h1 span {
