@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding: 0px 5%;
+}
+
+h1 {
+    font-family: 'Yeseva One', cursive;
+}
+
+.title span {
+    color: #FFAD5A;
+}
+
+.paragraph {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+}
+a{
+    text-decoration:none;
+}
+.button {
+    display: inline-block;
+    font-size: 18px;
+    background: rgb(89,35,185);
+    color: white;
+    border-radius: 5px;
+    font-weight: 400;
+    padding: 10px 35px;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+/* WELCOME SECTION START FROM HERE */
+#welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#welcome-section .welcome-text,
+#welcome-section .welcome-image {
+    width: 50%;
+}
+
+#welcome-section .welcome-text h1 {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    color: #333333;
+}
+
+#welcome-section .welcome-text h1 span {
+    color: #FFAD5A;
+}
+
+#welcome-section .welcome-image img {
+    width: 100%;
+}
+
+/* WELCOME SECTION END HERE */
