@@ -33,6 +33,7 @@ ol {
     line-height: 70px;
     text-transform: uppercase;
 }
+
 .title span {
     color: #FFAD5A;
 }
@@ -41,6 +42,7 @@ ol {
 .footer-title span {
     color: #FFAD5A;
 }
+
 .footer-title {
     font-weight: 700;
     font-size: 48px;
@@ -60,7 +62,7 @@ ol {
 .button {
     display: inline-block;
     font-size: 18px;
-    background: rgb(89, 35, 185);
+    background: rgb(93, 0, 255);
     color: white;
     border-radius: 5px;
     font-weight: 400;
@@ -79,6 +81,7 @@ ol {
 #welcome-section .welcome-image {
     width: 50%;
 }
+
 #welcome-section .welcome-text h1 {
     font-weight: 700;
     font-size: 60px;
@@ -86,7 +89,8 @@ ol {
     color: #333333;
     position: relative;
 }
-#welcome-section .welcome-text h1::after{
+
+#welcome-section .welcome-text h1::after {
     position: absolute;
     content: '';
     left: -10px;
@@ -237,7 +241,7 @@ ol {
 
 /* MESSAGE SECTION END HERE */
 /* FOOTER SECTION START FROM HERE */
-#footer{
+#footer {
     width: 100%;
     background: black;
     padding: 15px 0px;
@@ -246,8 +250,12 @@ ol {
     align-items: center;
     flex-direction: column;
 }
-#footer .paragraph{
+
+#footer .paragraph {
     color: white;
     font-size: 16px;
 }
+
 /* FOOTER SECTION END HERE */
+
+
